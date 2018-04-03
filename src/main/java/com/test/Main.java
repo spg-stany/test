@@ -11,12 +11,11 @@ public class Main {
         int leftMax = 0, rightMax = 0, left = 0, right = arr.length - 1, volume = 0;
 
         while (left < right) {
-            if (arr[left] > leftMax) {
-                leftMax = arr[left];
-            }
-            if (arr[right] > rightMax) {
+            if (arr[left] > leftMax)
+                leftMax = arr[left]
+            if (arr[right] > rightMax)
                 rightMax = arr[right];
-            }
+            
             if (leftMax >= rightMax) {
                 volume += rightMax - arr[right];
                 right--;
